@@ -1,0 +1,791 @@
+.homepage{
+    height: 100vh;
+    width: 100%;
+    background-color: #333;
+      /* background-color: #262e3a;   */
+    /* background-color: rgba(0, 0, 0, 0.905); */
+    position: relative;
+}
+
+header{
+    position: absolute;
+    margin-top:2vh;
+    background-color:#242a32a4;
+    height:9vh;
+    width:98%;
+    left:1%;
+    border: 2px solid goldenrod;
+    
+
+}
+
+.navbar{
+    width: 100%;
+     
+    position: absolute;
+    top: 2vh;
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    justify-content: space-between;
+    /* border: 2px solid red; */
+    color: white;
+
+}
+.Krishan{
+    /* display: none; */
+    /* color: white; */
+    color:#242a32a4 ;
+    animation-name:krishancome;
+    animation-duration:10s;
+    animation-delay: 0s;
+    animation-direction:normal;
+    animation-timing-function:linear;
+    animation-iteration-count:infinite;
+    font-family: 'Poppins', sans-serif;
+}
+
+@keyframes krishancome {
+    0%{
+       
+
+    }
+
+    50%{
+        color: aliceblue;
+        font-size: medium;
+        
+  }
+
+    100%{
+          color: aliceblue;
+          font-size: medium;
+          
+    }
+    
+}
+
+
+
+
+
+
+.portfolioicon{
+    height:25px;
+    width: 25px;
+    background-image: url(Images/portfolioicon.png);
+    background-size: cover;
+    
+}
+
+.leftnav{
+    width:12vw;
+    /* border: 2px solid black; */
+    display: flex;
+    flex-direction:row;
+    justify-content:flex-start;
+    align-items: center;
+    gap:5px;
+   margin-left: 5%;
+
+}
+
+.rightnav{
+    /* background-color: chartreuse; */
+    display: flex;
+    flex-direction:row;
+    justify-content:space-evenly;
+    align-items: center;
+    gap:5%;
+    margin-right: 10vw;
+    
+}
+
+.navbar ul li a{
+    color: white;
+    text-decoration: none;
+    
+}
+
+.navbutton{
+    
+    border: 1px solid white;
+    padding: 1%;
+    border-radius:10%;
+    /* box-shadow: 0px 0px 1px 1px grey ; */
+}
+
+
+/* .........Text Hover......... */
+.rightnav li:hover{
+    animation-name: colorintext;
+    animation-duration:5s;
+    animation-delay: 0ms;
+    animation-direction:normal;
+    animation-timing-function:linear;
+    animation-iteration-count:infinite;
+
+}
+
+@keyframes colorintext {
+    0%{
+        
+    }
+
+    20%{
+        background-color: darkorange;
+
+    }
+
+    100%{
+       background-color: darkorange;
+
+    }
+    
+}
+
+
+/* >>>>>>>>>>>>>>>>>Home content>>>>>>>>>>>>>>>>>>>>>>> */
+
+
+.homesection{
+    width:35%;
+    height:50vh;
+    background-color: #242a32a4;
+    border: 2px solid goldenrod;
+    position: absolute;
+    top:30%;
+    left:10%;
+    /* padding: 20px; */
+
+}
+
+.home-content{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap:10px;
+    margin-top: 35px;
+    margin-left: 10px;
+    color: white;
+    /* font-family: 'Kanit', sans-serif; */
+font-family: 'Poppins', sans-serif;
+/* font-family: 'Roboto Mono', monospace; */
+padding: 10px;
+}
+
+.homebutton{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    gap:30px;
+    margin-top: 20px;
+
+}
+
+.btn{
+    height:40px;
+    width:150px;
+    border: 1px solid white;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    padding-top:2.5%;
+    box-shadow:0px 0px 2px 2px cornflowerblue;
+}
+
+.btn:hover{
+    background-color: goldenrod;
+}
+
+/* <!--<<<<<<<Photo Start >>>>>>>>>>>>>>> --> */
+.myimage{
+    /* height: 70vh;
+    width: 33%; */
+
+    height: 450px;
+    width: 450px;
+    position: absolute;
+    left:57%;
+    top:26%;
+    border: 2px solid goldenrod;
+    border-radius: 50%;
+    background-image: url(Images/myimage.jpg);
+    /* background-position:center; */
+    background-size:cover;
+    background-repeat:no-repeat;
+  /* background-clip: content-box; */
+}
+
+
+.botttomlogo{
+    position: absolute;
+    bottom: 10px;
+    left: 50px;
+    height: 60px;
+    width: 400px;
+    /* border: 2px solid red; */
+    background-color:transparent;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 10px;
+
+}
+
+.bottomButton{
+    height: 45px;
+    width: 100px;
+   
+    font-size:20px;
+    display: inline-block;
+    padding: 10px;
+    margin: 5px;
+    color:blue;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 2px;
+   background-color:white;
+}
+
+
+
+/* ============================== */
+/* Style for Skill Section */
+.skills-sec {
+    background-color: #f5f5f5;
+    padding: 40px 0;
+}
+
+.skills {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.skills h3 {
+    font-size: 24px;
+    color: #333;
+}
+
+.skills hr {
+    width: 55px;
+    height: 3px;
+    background-color: #3498db;
+    margin: 10px auto;
+}
+
+.skills-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.left, .right {
+    flex: 1;
+}
+
+.skill-item {
+     background-color: #fff; 
+    /* border: 2px solid #3498db; */
+    border: 2px solid #333;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    transition: transform 0.3s;
+    
+}
+
+.skill-item:hover {
+    transform: scale(1.05);
+    background-color: goldenrod;
+    color: white;
+}
+
+.skill-item h4 {
+    font-size: 20px;
+    color: #3498db;
+}
+
+.skill-item p {
+    font-size: 16px;
+    color: #555;
+}
+
+/* Media Query for Responsive Design */
+@media (max-width: 768px) {
+    .skills-content {
+        flex-direction: column;
+    }
+
+    .left, .right {
+        flex: auto;
+        margin: 0;
+    }
+}
+
+
+/* Add your CSS styles in an external stylesheet or in a <style> tag in the HTML document */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    
+}
+
+.download-button {
+    margin: 20px;
+}
+
+.download-button a {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #3498db;
+   
+     color: #fff; 
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.download-button a:hover {
+    background-color: #258cd1;
+}
+
+
+
+/* //=============projects */
+
+.projectline{
+    height:40px;
+    background-color: #333;
+    /* background-color:#777; */
+    color: white;
+    text-align: center;
+}
+
+.portfolio {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 20px;
+    margin-left: 130px;
+    margin-bottom: 20px;
+    
+}
+
+.project {
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    padding: 20px;
+    transition: transform 0.2s;
+    display: flex;
+    flex-direction: column;
+}
+
+.project:hover {
+    transform: translateY(-5px);
+    background-color:goldenrod;
+}
+
+.project-icon {
+    text-align: center;
+}
+
+.project-icon img {
+    width: 100px;
+    height: 100px;
+}
+
+.project-title {
+    font-size: 24px;
+    margin: 10px 0;
+    color: #333;
+}
+
+.project-date {
+    font-size: 14px;
+    color: #777;
+}
+
+.project-description {
+    margin-top: 10px;
+    color: #555;
+}
+
+.project-link {
+    margin-top: 20px;
+}
+
+.project-link a {
+    text-decoration: none;
+    color: #0074cc;
+    display: flex;
+    align-items: center;
+    transition: color 0.3s;
+}
+
+.project-link a:hover {
+    color: #0056b3;
+}
+
+.project-link img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+/* --------------------animations of icons---------- */
+/* Add CSS for the icons and animations */
+.icon {
+    font-size: 48px;
+    color: #3498db; /* Change the color to your preference */
+    margin: 20px;
+    display: inline-block;
+    position: absolute;
+    animation-timing-function: ease-in;
+}
+
+/* Animation for the Java icon falling */
+@keyframes fallJava {
+    0% {
+        top: -100px;
+        transform: rotate(0deg);
+    }
+    100% {
+        top: 80vh;
+        transform: rotate(720deg);
+    }
+}
+
+/* Animation for the Database icon flying */
+@keyframes flyDatabase {
+    0% {
+        top: 10vh;
+        transform: rotate(0deg);
+    }
+    100% {
+        top: -100px;
+        transform: rotate(360deg);
+    }
+}
+
+/* Animation for the Code icon falling */
+@keyframes fallCode {
+    0% {
+        top: -100px;
+        transform: rotate(0deg);
+    }
+    100% {
+        top: 80vh;
+        transform: rotate(720deg);
+    }
+}
+
+/* Animation for the HTML5 icon flying */
+/* Add CSS for the icons and animations */
+.icon {
+    font-size: 48px;
+    color: #3498db; /* Change the color to your preference */
+    margin: 20px;
+    display: inline-block;
+    position: absolute;
+    animation-timing-function: ease-in-out;
+}
+
+/* Animation for the Java icon like a honey bee */
+@keyframes moveLikeHoneyBeeJava {
+0% {
+        /* top: 14vh;
+        left: 10vw;
+        transform: rotate(0deg); */
+        left: 0px;
+    }
+    100% {
+        /* top: 60vh;
+        left: 50vw;
+        transform: rotate(720deg); */
+        left: 800px;
+    }
+}
+
+/* Animation for the Database icon like a honey bee */
+@keyframes moveLikeHoneyBeeDatabase {
+    0% {
+        top: 10vh;
+        left: 10vw;
+        transform: rotate(0deg);
+    }
+    100% {
+        top: 60vh;
+        left: 50vw;
+        transform: rotate(720deg);
+    }
+}
+
+/* Animation for the Display Code icon like a honey bee */
+@keyframes moveLikeHoneyBeeDisplayCode {
+    0% {
+        top: 10vh;
+        left: 10vw;
+        transform: rotate(0deg);
+    }
+    100% {
+        top: 60vh;
+        left: 50vw;
+        transform: rotate(720deg);
+    }
+}
+
+/* Animation for the Code icon like a honey bee */
+@keyframes moveLikeHoneyBeeCode {
+    0% {
+        top: 10vh;
+        left: 10vw;
+        transform: rotate(0deg);
+    }
+    100% {
+        top: 60vh;
+        left: 50vw;
+        transform: rotate(720deg);
+    }
+}
+
+/* Animation for the HTML5 icon like a honey bee */
+@keyframes moveLikeHoneyBeeHTML5 {
+    0% {
+        top: 10vh;
+        left: 10vw;
+        transform: rotate(0deg);
+    }
+    100% {
+        top: 60vh;
+        left: 50vw;
+        transform: rotate(720deg);
+    }
+}
+
+/* Animation for the CSS3 icon like a honey bee */
+/* Add CSS for the icons and animations */
+.icon {
+    font-size: 48px;
+    color: #3498db; /* Change the color to your preference */
+    margin: 20px;
+    display: inline-block;
+    position: absolute;
+    animation-timing-function: ease-in-out;
+}
+
+/* Animation for the Java icon falling like a honey bee */
+@keyframes fallLikeHoneyBeeJava {
+    0% {
+        top: -100px;
+        left: 10vw;
+        transform: rotate(0deg);
+    }
+    100% {
+        top: 80vh;
+        left: 20vw;
+        transform: rotate(360deg);
+    }
+}
+
+/* Animation for the Database icon flying like a honey bee */
+@keyframes flyLikeHoneyBeeDatabase {
+    0% {
+        top: 10vh;
+        left: 10vw;
+        transform: rotate(0deg);
+    }
+    100% {
+        top: -100px;
+        left: 70vw;
+        transform: rotate(360deg);
+    }
+}
+
+/* Animation for the Display Code icon falling like a honey bee */
+@keyframes fallLikeHoneyBeeDisplayCode {
+    0% {
+        top: -100px;
+        left: 50vw;
+        transform: rotate(0deg);
+    }
+    100% {
+        top: 80vh;
+        left: 40vw;
+        transform: rotate(360deg);
+    }
+}
+
+/* Animation for the Code icon flying like a honey bee */
+@keyframes flyLikeHoneyBeeCode {
+    0% {
+        top: 10vh;
+        left: 80vw;
+        transform: rotate(0deg);
+    }
+    100% {
+        top: -100px;
+        left: 10vw;
+        transform: rotate(360deg);
+    }
+}
+
+/* Animation for the HTML5 icon falling like a honey bee */
+@keyframes fallLikeHoneyBeeHTML5 {
+    0% {
+        top: -100px;
+        left: 10vw;
+        transform: rotate(0deg);
+    }
+    100% {
+        top: 80vh;
+        left: 60vw;
+        transform: rotate(360deg);
+    }
+}
+
+/* Animation for the CSS3 icon flying like a honey bee */
+@keyframes flyLikeHoneyBeeCSS3 {
+    0% {
+        top: 10vh;
+        left: 10vw;
+        transform: rotate(0deg);
+    }
+    100% {
+        top: -100px;
+        left: 30vw;
+        transform: rotate(360deg);
+    }
+}
+
+.java-icon {
+    animation: fallLikeHoneyBeeJava s linear infinite;
+}
+
+.database-icon {
+    animation: flyLikeHoneyBeeDatabase 10s linear infinite;
+}
+
+.display-code-icon {
+    animation: fallLikeHoneyBeeDisplayCode 10s linear infinite;
+}
+
+.code-icon {
+    animation: flyLikeHoneyBeeCode 8s linear infinite;
+}
+
+.html5-icon {
+    animation: fallLikeHoneyBeeHTML5 9s linear infinite;
+}
+
+.css3-icon {
+    animation: flyLikeHoneyBeeCSS3 10s linear infinite;
+}
+
+/* ------------------------end animaion------ */
+
+/* Add CSS for the footer section */
+.footer {
+    /* background-color: #262e3a;   */
+    background-color: #333;
+    color: #fff;
+    padding: 40px 0;
+    height: 230px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.footer-logo {
+    flex: 1;
+}
+
+.footer-logo h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.footer-contact {
+    flex: 1;
+}
+
+.footer-contact h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.footer-social {
+    flex: 1;
+}
+
+.footer-social h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+}
+
+.icon {
+    font-size: 24px;
+    margin: 0 10px;
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Add hover effect to social icons */
+.icon:hover {
+    color: #3498db; /* Change the color to your preference */
+}
+
+.download-button2{
+    height: 14px;
+   
+  margin-top: 20px;
+   
+   
+}
+
+.download-button2 a{
+   
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #3498db;
+   
+     color: #fff; 
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+
+/* ================apply media Query============ */
+
+
+
+/*=================== running text====================== */
+/* Add CSS for the animated text */
+
